@@ -12,7 +12,7 @@ spec:
   ports:
     - port: {{ .Values.service.port }}
       targetPort: http
-      protocol: TCP
+      protocol: UDP
       name: http-port
   selector:
     app: {{ template "sample-chart.name" . }}
