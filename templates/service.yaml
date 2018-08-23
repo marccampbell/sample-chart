@@ -17,7 +17,11 @@ spec:
     - port: 8082
       targetPort: 8082
       protocol: UDP
-      name: udp-port      
+      name: udp-port     
+    - port: 443
+      targetPort: 8443
+      protocol: TCP
+      name: tls-port         
   selector:
     app: {{ template "sample-chart.name" . }}
     release: {{ .Release.Name }}
