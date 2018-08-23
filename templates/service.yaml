@@ -14,10 +14,6 @@ spec:
       targetPort: 8443
       protocol: TCP
       name: tls-port
-    - port: 9000
-      targetPort: 9000
-      protocol: UDP
-      name: udp-port
   selector:
     app: {{ template "sample-chart.name" . }}
     release: {{ .Release.Name }}
