@@ -1,3 +1,3 @@
-# Sample Chart
+# Upstream Example App
 
-This chart doesn't do anything. It's a chart that's used in dev for testing updates.
+This chart is maintained by an open source community of contributors. All changes must be done through pull request and review.
